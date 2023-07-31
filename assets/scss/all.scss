@@ -1,3 +1,5 @@
+//css reset
+@import "./helpers/reset";
 //breakpoint
 @import "../scss/helpers/breakpoint";
 
@@ -15,7 +17,7 @@
 
 // Layout & components
 @import "../node_modules/bootstrap/scss/root";
-@import "../node_modules/bootstrap/scss/reboot";
+// @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/containers";
@@ -68,8 +70,25 @@ body{
     line-height: 1.5;
     a{
         display: block;
+        text-decoration: none;
     }
 }
-
+.container{
+    padding: 0 12px;
+}
+@include ipad{
+    body{
+        .container{
+            padding: 0 36px;
+        }
+    }
+}
+@include iphone6{
+    body{
+        .container{
+            padding: 0 14px 0 13px;
+        }
+    }
+}
 
 

@@ -1,16 +1,24 @@
+//for bootstrap
+@mixin md{
+    @media (min-width: 769px) {
+        @content
+    }
+}
+@mixin sm{
+    @media (min-width: 576px) {
+        @content
+    }
+}
+
+
+//normal
 @mixin normal{
     @media (max-width: 1320px) {
         @content
     }
 }
 
-@mixin width768{
-    @media (max-width: 768px) {
-        @content
-    }
-}
-
-@mixin width375{
+@mixin ipad{
     @media (max-width: 768px) {
         @content
     }
