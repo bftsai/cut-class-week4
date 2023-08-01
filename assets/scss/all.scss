@@ -78,22 +78,29 @@ body{
         }
     }
 }
-.container{
-    padding: 0 12px;
+
+
+body{
+    .container{
+        padding: 0 14px 0 13px;
+    }
 }
-@include ipad{
+@include md{ //576px
     body{
         .container{
             padding: 0 36px;
         }
     }
 }
-@include iphone6{
+
+@include lg{  //992px
     body{
         .container{
-            padding: 0 14px 0 13px;
+            padding: 0 12px;
         }
     }
 }
+
+
 
 

@@ -2,16 +2,14 @@
   a{
     color: #FFFFFF;
   }
-  .topItem{
-    width: 100%;
-  }
   .footerMenu{
-    width: 35.8025%;
+    display: none;
   }
   .media{
+    align-self: start;
     a{
-      width: 48px;
-      height: 48px;
+      width: 24px;
+      height: 24px;
     }
     .fb{
       background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true) center center no-repeat;
@@ -36,19 +34,20 @@
     }
   }
   .material-symbols-outlined{
-    font-size: 48px;
-  }
-  .bottom{
-    color: #FFFFFF;
+    font-size: 24px;
   }
 }
-@include ipad{
+
+@include md{
   .footer{
     .topItem{
       width: 100%;
     }
     .footerMenu{
+      display: block;
       width: 66.6668%;
+      display: flex;
+      justify-content: space-between;
     }
     .media{
       a{
@@ -59,28 +58,30 @@
     .tel,.mail{
       font-size: 36px !important;
     }
+    .material-symbols-outlined{
+      font-size: 48px;
+    }
+  }
+  .bottom{
+    .item1{
+      height: 21px !important;
+    }
+    .item2{
+      a{
+        font-size: 14px !important;
+      }
+    }
   }
 }
-@include iphone6{
+@include lg{
   .footer{
     .footerMenu{
-      display: none;
+      width: 35.8025%;
     }
     .media{
       a{
-        width: 24px;
-        height: 24px;
-      }
-    }
-    .tel,.mail{
-      font-size: 16px !important;
-    }
-    .material-symbols-outlined{
-      font-size: 24px !important;
-    }
-    .bottom{
-      .fs-11{
-        font-size: 16px !important;
+        width: 48px;
+        height: 48px;
       }
     }
   }

@@ -1,4 +1,7 @@
 .header{
+  .container{
+    padding: 0;
+  }
   .logo{
     width: 80px;
     height: 49px;
@@ -7,41 +10,46 @@
     text-indent: 200%;
     overflow: hidden;
     white-space: nowrap;
+    align-self: start;
+    margin: 15.5px 0 15.5px 15px;
   }
   .nav{
-    width: 37.963%;
+    width: 100%;
+  }
+  li{
+    width: 50%;
   }
   .nav-link{
-    padding: 25px 0;
+    padding: 11px 0;
     color: #FFFFFF;
   }
 }
-@include ipad{
+@include md{
   .header{
+    .container{
+      padding: 0 36px;
+    }
+    .logo{
+      margin: 0;
+      align-self: center;
+    }
     .nav{
       width: 70.69%;
     }
+    .nav-link{
+      font-size: 20px !important;
+      border: 0px !important;
+      padding: 25px 0;
+    }
   }
 }
-@include iphone6{
+@include lg{
   .header{
     .container{
-      padding: 0;
-    }
-    .logo{
-      align-self: start;
-      margin: 15.5px 0 15.5px 15px;
+      padding: 0 12px;
     }
     .nav{
-      width: 100%;
-    }
-    li{
-      width: 50%;
-    }
-    .nav-link{
-      font-size: 16px !important;
-      padding: 11px 0;
-      border: 1px solid #FFFFFF;
+      width: 37.963%;
     }
   }
 }
