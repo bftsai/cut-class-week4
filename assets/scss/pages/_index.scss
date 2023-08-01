@@ -1,0 +1,82 @@
+.index{
+    .bg{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true) center center no-repeat;
+        background-size: cover;
+
+    }
+    a{
+        padding: 5.5px 12px;
+    }
+    .about{
+        .material-symbols-outlined{
+            font-size: 100px;
+            margin: 0 auto;
+        }
+        ul{
+            width: 100%;
+        }
+        .list-group-item{
+            width: 23.6115%;
+        }
+    }
+    .classic{
+        .list-group-item{
+            width: 32.098765%;
+        }
+    }
+    .joinName{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .customer{
+        .list-group-item{
+            width: 23.6114%;
+            border-color: #DEE2E6;
+            box-shadow: 0 2px 6px #00000029;
+        }
+        .time{
+            color: #707070;
+        }
+    }
+    .contact{
+        p,form{
+            width: 49.0741%;
+            label{
+                line-height: 1.5;
+                font-size: 16px;
+            }
+            .name,.phone,.mail{
+                width: 100%;
+                padding: 5px 0 5px 12px;
+                line-height: 1.5;
+            }
+            .phone,.mail{
+                padding: 3.5px 0 3.5px 12px;
+            }
+            textarea{
+                width: 100%;
+                padding: 5px 0 0 12px;
+                line-height: 1.5;
+                resize: none;
+                height: 136px;
+            }
+        }
+        .form-check-input{
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            margin: 0;
+            border-color: #000000;
+        }
+        .submit{
+            width: 65.408805%;
+            font-size: 16px;
+            line-height: 24px;
+            &:hover{
+                cursor: pointer;
+                color: $secondary ;
+                transition: all 0.5s;
+            }
+        }
+    }
+}

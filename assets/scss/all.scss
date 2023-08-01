@@ -71,6 +71,11 @@ body{
     a{
         display: block;
         text-decoration: none;
+
+    &:hover{
+        color: $secondary !important;
+        transition:  0.5s;
+        }
     }
 }
 .container{
