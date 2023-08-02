@@ -429,7 +429,8 @@ $spacers: (
   15: $spacer * 9, //144px
   16: $spacer * 18.5, //296px
   17: $spacer * 4.5, //72px
-  18: $spacer * 8 //128px
+  18: $spacer * 8, //128px
+  19: $spacer *4, //64px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -718,7 +719,7 @@ $text-muted:                  var(--#{$prefix}secondary-color) !default; // Depr
 
 $initialism-font-size:        $small-font-size !default;
 
-$blockquote-margin-y:         $spacer !default;
+$blockquote-margin-y:         0 !default; //custom $spacer !default;
 $blockquote-font-size:        $font-size-base * 1.25 !default;
 $blockquote-footer-color:     $gray-600 !default;
 $blockquote-footer-font-size: $small-font-size !default;
@@ -815,8 +816,8 @@ $table-variants: (
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 // scss-docs-start input-btn-variables
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         0 !default; //custom .375rem !default;
+$input-btn-padding-x:         0 !default;//custom .75rem !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;
@@ -1317,8 +1318,8 @@ $dropdown-dark-header-color:        $gray-500 !default;
 // Pagination
 
 // scss-docs-start pagination-variables
-$pagination-padding-y:              .375rem !default;
-$pagination-padding-x:              .75rem !default;
+$pagination-padding-y:              0 !default; //custom .375rem !default;
+$pagination-padding-x:              0 !default; //custom .75rem !default;
 $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
 $pagination-padding-y-lg:           .75rem !default;
@@ -1328,7 +1329,7 @@ $pagination-font-size:              $font-size-base !default;
 
 $pagination-color:                  var(--#{$prefix}link-color) !default;
 $pagination-bg:                     var(--#{$prefix}body-bg) !default;
-$pagination-border-radius:          var(--#{$prefix}border-radius) !default;
+$pagination-border-radius:          0 !default; //custom var(--#{$prefix}border-radius) !default;
 $pagination-border-width:           var(--#{$prefix}border-width) !default;
 $pagination-margin-start:           calc(#{$pagination-border-width} * -1) !default; // stylelint-disable-line function-disallowed-list
 $pagination-border-color:           var(--#{$prefix}border-color) !default;

@@ -1,0 +1,259 @@
+//utilities
+.product{
+    .productMenu{
+        .nav{
+            width: 100%;
+        }
+        .nav-link{
+            width: 33.3333%;
+            border-color: #DCDCDC !important;
+        }
+        a:hover{
+            padding-bottom: 8px !important;
+            border-bottom: 8px solid #AA0601 !important;
+        }
+    }
+    .banner{
+        min-width: 375px;
+        display: flex;
+    }
+    .bannerItem{
+        width: 50%;
+        height: 136px;
+    }
+}
+.bookmark{
+    width: 100%;
+    li{
+        border-color: #555555;
+    }
+    .normal{
+        padding: 11px 14.5px;
+    }
+    .back,.next{
+        padding: 11px 13.5px;
+    }
+    .next{
+        background-color: #F2F2F2;
+    }
+    a:hover{
+        color: #FFFFFF !important;
+        background-color: #000000;
+        transition: all 0.5s;
+    }
+}
+@include md{
+    .product{
+        .bannerItem{
+            height: 296px;
+        }
+    }
+}
+@include lg{
+    .product{
+        .productMenu{
+            a{
+                font-size: 32px !important;
+                padding: 24px 0 !important;
+            }
+            a:hover{
+                padding-bottom: 16px !important;
+            }
+        }
+        .optical{
+            .item1{
+                content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true);
+                width: auto;
+            }
+            .item2{
+                content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true);
+                width: auto;
+            }
+        }
+        .sunglasses{
+            .item1{
+                content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true);
+                width: auto;
+            }
+            .item2{
+                content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true);
+                width: auto;
+            }
+        }
+        .bookmark{
+
+        }
+    }
+}
+//optical
+.optical{
+    .item1{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .item2{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .productPic{
+        height: 168px;
+        &:hover{
+            box-shadow: 0 2px 6px #00000029;
+        }
+    }
+    .pic1{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-1.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic2{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-2.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic3{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-3.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic4{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-4.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic5{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-5.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic6{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-6.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic7{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-1.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic8{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-2.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic9{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-3.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic10{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-4.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic11{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-5.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic12{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-6.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    button{
+        width: 24px;
+        height: 24px;
+    }
+    .style1{
+        background-color: #5F3E2D;
+    }
+    .style2{
+        background-color: #B75929;
+    }
+}
+
+//sunglasses
+.product{
+    .sunglasses{
+        display: none;
+    }
+}
+.sunglasses{
+    .item1{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .item2{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .productPic{
+        height: 224px;
+        &:hover{
+            box-shadow: 0 2px 6px #00000029;
+        }
+    }
+    .pic1{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-7.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic2{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-8.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic3{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-9.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic4{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-10.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic5{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-11.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic6{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-12.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    button{
+        width: 24px;
+        height: 24px;
+    }
+    .style1{
+        background-color: #5F3E2D;
+    }
+    .style2{
+        background-color: #B75929;
+    }
+}
+
+@include md{
+    .optical{
+        h2{
+            font-size: 42px !important;
+        }
+        p{
+            font-size: 32px !important;
+        }
+        .list-group-item{
+            width: 48.2759%;
+        }
+    }
+    .sunglasses{
+        h2{
+            font-size: 42px !important;
+        }
+        p{
+            font-size: 32px !important;
+        }
+        .list-group-item{
+            width: 48.2759%;
+        }
+        .pic1,.pic2,.pic3,.pic4,.pic5,.pic6{
+            background-size: contain;
+        }
+    }
+}
+@include lg{
+    .optical{
+        .list-group-item{
+            width: 23.6111111%;
+        }
+    }
+    .sunglasses{
+        .list-group-item{
+            width: 32.098765%;
+        }
+    }
+}

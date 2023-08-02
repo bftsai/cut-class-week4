@@ -26,8 +26,13 @@
     }
     .customer{
         .list-group-item{
-        border-color: #DEE2E6;
-        box-shadow: 0 2px 6px #00000029;
+            border-color: #DEE2E6;
+            box-shadow: 0 2px 6px #00000029;
+            &:hover{
+                cursor: pointer;
+                box-shadow: 0 2px 8px #00000086;
+                transition: all 0.5s;
+            }
         }
         .item1{
             height: 306px;
@@ -87,7 +92,7 @@
             line-height: 24px;
             &:hover{
                 cursor: pointer;
-                color: $secondary ;
+                color: $secondary !important;
                 transition: all 0.5s;
             }
         }
@@ -130,7 +135,7 @@
             }
         }
         .classic{
-            h2{
+            h2,a{
                 font-size: 48px !important;
             }
             .list-group-item{
