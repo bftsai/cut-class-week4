@@ -1,1 +1,0 @@
-import"./about-fee51d3f.js";$(document).ready(function(){$(".optical-a").click(function(n){n.preventDefault()}),$(".sunglasses-a").click(function(n){n.preventDefault(),$(".optical-a").fadeOut(500),$(".function-a").fadeOut(500),$(".sunglasses").fadeIn(1e3)}),$(".function-a").click(function(n){n.preventDefault()})});
