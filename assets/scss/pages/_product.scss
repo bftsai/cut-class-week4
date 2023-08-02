@@ -16,6 +16,7 @@
     .banner{
         min-width: 375px;
         display: flex;
+        align-items: center;
     }
     .bannerItem{
         width: 50%;
@@ -62,26 +63,24 @@
         }
         .optical{
             .item1{
-                content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true);
-                width: auto;
+                background: none;
             }
             .item2{
-                content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true);
-                width: auto;
+                background: none;
+            }
+            img{
+                max-height: 296px;
             }
         }
         .sunglasses{
             .item1{
                 content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true);
-                width: auto;
+                background-size: cover;
             }
             .item2{
                 content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true);
-                width: auto;
+                background-size: cover;
             }
-        }
-        .bookmark{
-
         }
     }
 }
@@ -217,7 +216,9 @@
         background-color: #B75929;
     }
 }
+//function
 
+//RWD
 @include md{
     .optical{
         h2{
@@ -242,6 +243,11 @@
         }
         .pic1,.pic2,.pic3,.pic4,.pic5,.pic6{
             background-size: contain;
+        }
+    }
+    .function{
+        h2{
+            font-size: 42px !important;
         }
     }
 }
