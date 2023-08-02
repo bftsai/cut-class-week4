@@ -1,5 +1,3 @@
-//css reset
-@import "./helpers/reset";
 //breakpoint
 @import "../scss/helpers/breakpoint";
 
@@ -18,6 +16,9 @@
 // Layout & components
 @import "../node_modules/bootstrap/scss/root";
 // @import "../node_modules/bootstrap/scss/reboot";
+//meyerweb css reset
+@import "./helpers/reset";
+
 @import "../node_modules/bootstrap/scss/type";
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/containers";

@@ -24,8 +24,93 @@
         background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true) center center no-repeat;
         background-size: cover;
     }
+    .customer{
+        .list-group-item{
+        border-color: #DEE2E6;
+        box-shadow: 0 2px 6px #00000029;
+        }
+        .item1{
+            height: 306px;
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-1.png?raw=true) center center no-repeat;
+            background-size: cover;
+        }
+        .item2{
+            height: 306px;
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-2.png?raw=true) center center no-repeat;
+            background-size: cover;
+        }
+        .item3{
+            height: 306px;
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-3.png?raw=true) center center no-repeat;
+            background-size: cover;
+        }
+        .item4{
+            height: 306px;
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-4.png?raw=true) center center no-repeat;
+            background-size: cover;
+        }
+    }
+    .contact{
+        .name,.phone,.mail,.suggest{
+            width: 100%;
+        }
+        .name,.phone,.mail{
+            width: 100%;
+            padding: 5px 0 5px 12px;
+            line-height: 1.5;
+        }
+        .phone,.mail{
+            padding: 3.5px 0 3.5px 12px;
+        }
+        textarea{
+            width: 100%;
+            padding-top: 5px;
+            padding: 5px 0 0 12px;
+            margin-bottom: -5px;
+            line-height: 1.5;
+            resize: none;
+            height: 136px;
+        }
+        .form-check-label{
+            width: 91.954%;
+        }
+        .form-check-input{
+            width: 22px;
+            height: 22px;
+            padding: 0;
+            margin: 0;
+            border-color: #000000;
+        }
+        .submit{
+            width: 100%;
+            font-size: 16px;
+            line-height: 24px;
+            &:hover{
+                cursor: pointer;
+                color: $secondary ;
+                transition: all 0.5s;
+            }
+        }
+    }
 }
-
+@include sm{
+    .index{
+        .customer{
+            .item1{
+                height: 547px;
+            }
+            .item2{
+                height: 547px;
+            }
+            .item3{
+                height: 547px;
+            }
+            .item4{
+                height: 547px;
+            }
+        }
+    }
+}
 @include md{
     .index{
         .bg{
@@ -69,6 +154,28 @@
                 }
             }
         }
+        .customer{
+            h2{
+                font-size: 48px !important;
+            }
+            .list-group-item{
+                width: 48.564%;
+            }
+            .item1,.item2,.item3,.item4{
+                height: 306px;
+            }
+        }
+        .contact{
+            h2{
+                font-size: 48px !important;
+            }
+            p,form{
+                width: 82.758621%;
+            }
+            .submit{
+                width: 58.3333333%;
+            }
+        }
     }
 }
 
@@ -84,17 +191,6 @@
         .classic{
             .list-group-item{
                 width: 32.098765% !important;
-            }
-        }
-
-        .customer{
-            .list-group-item{
-                width: 23.6114%;
-                border-color: #DEE2E6;
-                box-shadow: 0 2px 6px #00000029;
-            }
-            .time{
-                color: #707070;
             }
         }
         .joinName{
@@ -114,47 +210,23 @@
                 }
             }
         }
+        .customer{
+            .list-group-item{
+                width: 23.6114% !important;
+            }
+            .time{
+                color: #707070;
+            }
+        }
         .contact{
+            p{
+                font-size: 20px !important;
+            }
             p,form{
                 width: 49.0741%;
-                label{
-                    line-height: 1.5;
-                    font-size: 16px;
-                }
-                .name,.phone,.mail{
-                    width: 100%;
-                    padding: 5px 0 5px 12px;
-                    line-height: 1.5;
-                }
-                .phone,.mail{
-                    padding: 3.5px 0 3.5px 12px;
-                }
-                textarea{
-                    width: 100%;
-                    padding-top: 5px;
-                    padding: 5px 0 0 12px;
-                    margin-bottom: -5px;
-                    line-height: 1.5;
-                    resize: none;
-                    height: 136px;
-                }
-            }
-            .form-check-input{
-                width: 24px;
-                height: 24px;
-                padding: 0;
-                margin: 0;
-                border-color: #000000;
             }
             .submit{
                 width: 65.408805%;
-                font-size: 16px;
-                line-height: 24px;
-                &:hover{
-                    cursor: pointer;
-                    color: $secondary ;
-                    transition: all 0.5s;
-                }
             }
         }
     }
