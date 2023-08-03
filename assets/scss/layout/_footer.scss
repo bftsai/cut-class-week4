@@ -38,7 +38,7 @@
   }
 }
 
-@include md{
+@include sm{
   .footer{
     .topItem{
       width: 100%;
@@ -73,6 +73,7 @@
     }
   }
 }
+
 @include lg{
   .footer{
     .footerMenu{

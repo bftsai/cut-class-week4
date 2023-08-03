@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //product change
     $('.optical-a').click(function (e) { 
         e.preventDefault();
         $('.sunglasses').fadeOut(500);
@@ -16,5 +17,18 @@ $(document).ready(function () {
         $('.optical').fadeOut(500);
         $('.sunglasses').fadeOut(500);
         $('.function').fadeIn(1000);
+    });
+    //privacy service
+    $('.privacy-a').click(function (e) { 
+        e.preventDefault();
+        $('.product').fadeOut(500);
+        $('.service').fadeOut(500);
+        $('.privacy').fadeIn(1000);
+    });
+    $('.service-a').click(function (e) { 
+        e.preventDefault();
+        $('.product').fadeOut(500);
+        $('.privacy').fadeOut(500);
+        $('.service').fadeIn(1000);
     });
 });

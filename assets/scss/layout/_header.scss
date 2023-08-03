@@ -24,7 +24,7 @@
     color: #FFFFFF;
   }
 }
-@include md{
+@include sm{
   .header{
     .container{
       padding: 0 36px;

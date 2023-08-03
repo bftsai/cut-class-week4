@@ -43,7 +43,7 @@
         transition: all 0.5s;
     }
 }
-@include md{
+@include sm{
     .product{
         .bannerItem{
             height: 296px;
@@ -217,9 +217,13 @@
     }
 }
 //function
-
+.product{
+    .function{
+        display: none;
+    }
+}
 //RWD
-@include md{
+@include sm{
     .optical{
         h2{
             font-size: 42px !important;
@@ -252,6 +256,9 @@
     }
 }
 @include lg{
+    .product{
+        display: flex;
+    }
     .optical{
         .list-group-item{
             width: 23.6111111%;

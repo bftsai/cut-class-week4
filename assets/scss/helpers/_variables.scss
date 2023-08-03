@@ -517,7 +517,7 @@ $grid-breakpoints: (
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  // sm: 540px,
+  sm: 576px,//custom 540px,
   md: 768px,//custom 720px,
   lg: 1320px,//custom 960px,
   // xl: 1140px,
@@ -1266,7 +1266,7 @@ $navbar-dark-brand-hover-color:     $navbar-dark-active-color !default;
 // scss-docs-start dropdown-variables
 $dropdown-min-width:                10rem !default;
 $dropdown-padding-x:                0 !default;
-$dropdown-padding-y:                .5rem !default;
+$dropdown-padding-y:                0 !default;//custom .5rem !default;
 $dropdown-spacer:                   .125rem !default;
 $dropdown-font-size:                $font-size-base !default;
 $dropdown-color:                    var(--#{$prefix}body-color) !default;
@@ -1276,7 +1276,7 @@ $dropdown-border-radius:            var(--#{$prefix}border-radius) !default;
 $dropdown-border-width:             var(--#{$prefix}border-width) !default;
 $dropdown-inner-border-radius:      calc(#{$dropdown-border-radius} - #{$dropdown-border-width}) !default; // stylelint-disable-line function-disallowed-list
 $dropdown-divider-bg:               $dropdown-border-color !default;
-$dropdown-divider-margin-y:         $spacer * .5 !default;
+$dropdown-divider-margin-y:         $spacer * 0.5 !default;
 $dropdown-box-shadow:               $box-shadow !default;
 
 $dropdown-link-color:               var(--#{$prefix}body-color) !default;
