@@ -1,6 +1,104 @@
-.shop{
+.shop,.shopLocate{
     .dropdown-toggle{
         padding: 5px 0 5px 12px;
-        width: 73.6%;
+        width: 79.315%;
+        border-color: #CED4DA;
+    }
+    .shopPic1,.shopPic2,.shopPic3,.shopPic4,.shopPic5{
+        width: 100%;
+        min-height: 224px;
+    }
+    .shopPic1{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .shopPic2{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-2.png?raw=true) center top no-repeat;
+        background-size: cover;
+    }
+    .shopPic3{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-3.png?raw=true) center top no-repeat;
+        background-size: cover;
+    }
+    .shopPic4{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-4.png?raw=true) center top no-repeat;
+        background-size: cover;
+    }
+    .shopPic5{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-5.png?raw=true) center top no-repeat;
+        background-size: cover;
+    }
+    .material-symbols-outlined{
+        font-size: 24px;
+    }
+    .shopDetail{
+        a,p{
+            color: #212529;
+        }
+        a:hover{
+            filter: drop-shadow(0 0 1px $secondary);
+        }
+    }
+}
+
+//shop location
+.shopLocate{
+    display: none;
+    iframe{
+        width: 100%;
+        min-height: 208px;
+    }
+}
+.taipei-Zhongshan-store,.taipei-Green-store,.taichung-Cingshui-store,.kaohsiung-Jhongjheng-store,.kaohsiung-Dream-store{
+    display: none;
+}
+
+@include sm{
+    .shop,.shopLocate{
+        h2{
+            font-size: 48px !important;
+        }
+        .dropdown-toggle{
+            width: 43.678161%;
+        }
+        label{
+            font-size: 24px;
+        }
+        .list-group{
+            width: 48.41954%;
+        }
+    }
+    .shopLocate{
+        .shopPic1,.shopPic2,.shopPic3,.shopPic4,.shopPic5{
+            width: 48.41954%;
+        }
+        iframe{
+            width: 100%;
+            min-height: 414px;
+        }
+    }
+}
+@include lg{
+    .shop,.shopLocate{
+        .dropdown-toggle{
+            width: 23.4568%;
+        }
+    }
+    .shop{
+        .list-group{
+            width: 31.515152%;
+        }
+    }
+    .shopLocate{
+        .flex-lg-column{
+            width: 40.58643%;
+            .list-group,.shopPic1,.shopPic2,.shopPic3,.shopPic4,.shopPic5{
+                width: 100%;
+            }
+        }
+        iframe{
+            width: 57.561728%;
+            height: 414px;
+        }
     }
 }
