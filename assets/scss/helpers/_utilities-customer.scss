@@ -1,0 +1,21 @@
+//bookmark
+.bookmark{
+    width: 100%;
+    li{
+        border-color: #555555;
+    }
+    .normal{
+        padding: 11px 14.5px;
+    }
+    .back,.next{
+        padding: 11px 13.5px;
+    }
+    .next{
+        background-color: #F2F2F2;
+    }
+    a:hover{
+        color: #FFFFFF !important;
+        background-color: #000000;
+        transition: all 0.5s;
+    }
+}

@@ -1,0 +1,83 @@
+.blog{
+    .pic1,.pic2,.pic3,.pic4,.pic5{
+        width: 100%;
+        height: 208px;
+        text-indent: 200%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .pic1{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-1.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic2{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-2.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic3{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-3.png?raw=true) center center no-repeat;
+        background-size: cover;   
+    }
+    .pic4{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-4.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic5{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-5.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .blog-link1,.blog-link2,.blog-link3,.blog-link4,.blog-link5{
+        &:hover{
+            filter: drop-shadow(0 0 1px $secondary);
+            cursor: pointer;
+        }
+    }
+}
+
+@include sm{
+    .blogHeader{
+        .blogHeaderMenu{
+            width: 70.6897%;
+        }
+        a{
+            padding: 13px 0;
+        }
+        .material-symbols-outlined{
+            font-size: 40px;
+        }
+    }
+    .blog{
+        h2{
+            font-size: 48px !important;
+        }
+        .pic1,.pic2,.pic3,.pic4,.pic5,.blogContent1,.blogContent2,.blogContent3,.blogContent4,.blogContent5{
+            width: 48.2759%;
+        }
+        .blogContent1,.blogContent2,.blogContent3,.blogContent4,.blogContent5{
+            p,a{
+                color: #555555;
+            }
+        }
+    }
+}
+@include lg{
+    .blogHeader{
+        .blogHeaderMenu{
+            width: 37.963%;
+        }
+    }
+    .blog{
+        h3{
+            font-size: 32px !important;
+        }
+        h4{
+            font-size: 20px;
+        }
+        .pic1,.pic2,.pic3,.pic4,.pic5,.blogContent1,.blogContent2,.blogContent3,.blogContent4,.blogContent5{
+            width: 49.074074%;
+        }
+        .pic1,.pic2,.pic3,.pic4,.pic5{
+            height: 400px;
+        }
+    }
+}

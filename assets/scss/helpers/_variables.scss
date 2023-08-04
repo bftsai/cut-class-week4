@@ -301,6 +301,7 @@ $cyans: (
 $primary:       #AA0601 !default; //custom $blue !default;
 $secondary:     #650300 !default; //custom $gray-600 !default;
 $third:         #FBF2F2 !default; //custom
+$fourth:        #555555 !default; //custom
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -313,7 +314,8 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
-  "third":       $third, //custom
+  "third":      $third, //custom
+  "fourth":     $fourth, //custom
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -431,6 +433,8 @@ $spacers: (
   17: $spacer * 4.5, //72px
   18: $spacer * 8, //128px
   19: $spacer *4, //64px
+  20: $spacer *3.75, //60px
+  21: $spacer *2.75 //44px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -1606,7 +1610,7 @@ $progress-bar-transition:           width .6s ease !default;
 // List group
 
 // scss-docs-start list-group-variables
-$list-group-color:                  var(--#{$prefix}body-color) !default;
+$list-group-color:                  #000000 !default; //custom  var(--#{$prefix}body-color) !default;
 $list-group-bg:                     var(--#{$prefix}body-bg) !default;
 $list-group-border-color:           var(--#{$prefix}border-color) !default;
 $list-group-border-width:           var(--#{$prefix}border-width) !default;
