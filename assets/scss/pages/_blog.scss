@@ -1,4 +1,7 @@
 .blog{
+    .blogHeader{
+        display: none;
+    }
     .pic1,.pic2,.pic3,.pic4,.pic5{
         width: 100%;
         height: 208px;
@@ -35,37 +38,19 @@
 }
 
 @include sm{
-    .blogHeader{
-        .blogHeaderMenu{
-            width: 70.6897%;
-        }
-        a{
-            padding: 13px 0;
-        }
-        .material-symbols-outlined{
-            font-size: 40px;
-        }
-    }
     .blog{
+        .blogHeader{
+            display: block;
+        }
         h2{
             font-size: 48px !important;
         }
         .pic1,.pic2,.pic3,.pic4,.pic5,.blogContent1,.blogContent2,.blogContent3,.blogContent4,.blogContent5{
             width: 48.2759%;
         }
-        .blogContent1,.blogContent2,.blogContent3,.blogContent4,.blogContent5{
-            p,a{
-                color: #555555;
-            }
-        }
     }
 }
 @include lg{
-    .blogHeader{
-        .blogHeaderMenu{
-            width: 37.963%;
-        }
-    }
     .blog{
         h3{
             font-size: 32px !important;
@@ -80,4 +65,11 @@
             height: 400px;
         }
     }
+}
+
+.blogDetail{
+    
+}
+@include sm{
+
 }

@@ -19,3 +19,30 @@
         transition: all 0.5s;
     }
 }
+//faq header menu
+.blogHeader{
+    a{
+        padding: 12px 0;
+    }
+}
+@include sm{
+    .blogHeader{
+        .blogHeaderMenu{
+            width: 70.6897%;
+        }
+        a{
+            padding: 13px 0;
+            font-size: 20px;
+        }
+        .material-symbols-outlined{
+            font-size: 40px;
+        }
+    }
+}
+@include lg{
+    .blogHeader{
+        .blogHeaderMenu{
+            width: 37.963%;
+        }
+    }
+}
