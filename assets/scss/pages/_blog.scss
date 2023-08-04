@@ -68,8 +68,74 @@
 }
 
 .blogDetail{
-    
+    .pic1,.pic2,.pic3,.pic4{
+        min-height: 208px;
+    }
+    .pic1{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blogpage-1.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic2{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blogpage-2.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic3{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blogpage-3.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .pic4{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blogpage-4.png?raw=true) center center no-repeat;
+        background-size: cover;
+    }
+    .share{
+        color: #0A0A0A;
+    }
 }
 @include sm{
-
+    .blogDetail{
+        .main{
+            width: 74.137931%;
+        }
+        .pic1{
+            min-height: 320px;
+        }
+        .pic2,.pic3,.pic4{
+            min-height: 312px;
+        }
+        .hashtag{
+            a{
+                font-size: 24px;
+            }
+        }
+        h2{
+            font-size: 48px !important;
+        }
+        .subtitle{
+            font-size: 24px;
+        }
+        .media{
+            width: 74.137931%;
+        }
+        .fb,.ig{
+            width: 24px;
+            height: 24px;
+        }
+        .changeBar{
+            border-color: #707070;
+        }
+        .adv{
+            width: 22.4138%;
+            padding-top: 84px;
+        }
+    }
+}
+@include lg{
+    .blogDetail{
+        .main{
+            width: 66.0494%;
+        }
+        .pic1,.pic2,.pic3,.pic4{
+            min-height: 520px;
+        }
+    }
 }
