@@ -1,0 +1,22 @@
+.faq{
+    .container{
+        padding: 0 8px 0 13px;
+    }
+}
+@include sm{
+    .faq{
+        .container{
+            padding: 0 36px;
+        }
+        h2{
+            font-size: 48px !important;
+        }
+    }
+}
+@include lg{
+    .faq{
+        .container{
+            padding: 0 12px;
+        }
+    }
+}

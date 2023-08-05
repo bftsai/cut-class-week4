@@ -68,6 +68,7 @@
 }
 
 .blogDetail{
+    display: none;
     .pic1,.pic2,.pic3,.pic4{
         min-height: 208px;
     }
@@ -90,6 +91,9 @@
     .share{
         color: #0A0A0A;
     }
+}
+.article1,.article2,.article3,.article4,.article5{
+    display: none;
 }
 @include sm{
     .blogDetail{
@@ -136,6 +140,21 @@
         }
         .pic1,.pic2,.pic3,.pic4{
             min-height: 520px;
+        }
+        .adv{
+            width: 32.098765%;
+            padding-top: 100px;
+            a{
+                font-size: 24px;
+            }
+            .tags{
+                font-size: 32px;
+            }
+        }
+        .tags{
+            .material-symbols-outlined{
+                font-size: 38px;
+            }
         }
     }
 }
