@@ -1,0 +1,1 @@
+import"./main-ce6363ab.js";$(document).ready(function(){$(".privacy-a").click(function(e){e.preventDefault(),$(".faq").fadeOut(500),$(".service").fadeOut(500),$(".privacy").delay(500).fadeIn(1e3)}),$(".service-a").click(function(e){e.preventDefault(),$(".faq").fadeOut(500),$(".privacy").fadeOut(500),$(".service").delay(500).fadeIn(1e3)})});
