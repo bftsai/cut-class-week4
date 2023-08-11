@@ -23,26 +23,6 @@
         height: 136px;
     }
 }
-// .bookmark{
-//     width: 100%;
-//     li{
-//         border-color: #555555;
-//     }
-//     .normal{
-//         padding: 11px 14.5px;
-//     }
-//     .back,.next{
-//         padding: 11px 13.5px;
-//     }
-//     .next{
-//         background-color: #F2F2F2;
-//     }
-//     a:hover{
-//         color: #FFFFFF !important;
-//         background-color: #000000;
-//         transition: all 0.5s;
-//     }
-// }
 @include sm{
     .product{
         .bannerItem{
@@ -61,25 +41,12 @@
                 padding-bottom: 16px !important;
             }
         }
-        .optical{
-            .item1{
-                background: none;
-            }
-            .item2{
+        .optical,.sunglasses{
+            .item1,.item2{
                 background: none;
             }
             img{
-                max-height: 296px;
-            }
-        }
-        .sunglasses{
-            .item1{
-                content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true);
-                background-size: cover;
-            }
-            .item2{
-                content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true);
-                background-size: cover;
+                height: 296px;
             }
         }
     }
